@@ -1,0 +1,142 @@
+html {
+    hright: 100%;
+}
+
+body {
+    background-color: #f3f2f0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'intro-bold';
+  src: url('../fonts/intro-bold.ttf') format('truetype');
+} 
+
+@font-face {
+  font-family: 'intro-extra-bold';
+  src: url('../fonts/intro-extra-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'intro-light';
+  src: url('../fonts/intro-light.ttf') format('truetype');
+} 
+
+.header {
+    background-color:#131110;
+    background-image: url("../img/design/slider1.jpg");
+    height: 920px;
+    background-position: 50% 0;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+}
+
+.logo {
+    background-image: url(../img/design/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 200px;
+    height: 174px;
+    margin-top: 13px;
+}
+
+@media (max-device-width: 768px) {
+    
+}
+
+@media (min-device-width: 769px) and (max-device-width: 1199px) {
+    
+}
+
+@media (min-device-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    /* HEADER BLOCK */
+    .header-top {
+        display: grid;
+        grid-template-columns: 300px auto;
+    }
+
+    .header-top-navigation {
+        text-align: right;
+        align-self: center;
+    }
+
+    .header-top-navigation > a {
+        color: #EEE;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: intro-bold;
+        margin-left: 30px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s ease;
+        padding: 10px;
+        border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+    }
+
+    .header-top-navigation > a:hover {
+        background: rgba(232,232,232,0.23);
+    }
+
+    /* JUMBOTRON */
+    .jumbotron {
+        height: 160px;
+    }
+
+    .jumbotron-block {
+        border-radius: 5px 5px 5px 5px;
+        -moz-border-radius: 5px 5px 5px 5px;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        background-color: #FFF;
+        -webkit-box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.3); 
+        box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.3);
+        margin-top: -60px;
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px 35px;
+    }
+
+    .jumbotron-block-info {
+        display: grid;
+        grid-template-columns: 80px auto;
+        grid-gap: 15px;
+        align-items: center;
+    }
+
+    .jumbotron-title {
+        font-family: intro-extra-bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #343331;
+    }
+
+    .dumbotron-description {
+        font-family: intro-light;
+        font-size: 13px;
+        color: #666;
+        letter-spacing: 0.5px;
+    }
+
+    /* TITLE CENTERED */
+    .title-centered {
+        margin-bottom: 40px;
+    }
+
+    .title-centered-block {
+        font-family: intro-extra-bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #343331;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+
+}
