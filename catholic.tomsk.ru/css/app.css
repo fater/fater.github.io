@@ -26,9 +26,7 @@ body {
 .header {
   background-color: #131110;
   background-image: url("../img/design/slider1.jpg");
-  height: 920px;
   background-position: 50% 0;
-  /*background-size: contain;*/
   background-repeat: no-repeat;
 }
 
@@ -51,6 +49,11 @@ body {
 @media (min-device-width: 769px) and (max-device-width: 1199px) {
   .container {
     width: 768px;
+  }
+
+  .header {
+    height: 570px;
+    background-size: 1200px;
   }
 
   .header-top-navigation > a {
@@ -90,6 +93,10 @@ body {
 @media (min-device-width: 1200px) {
   .container {
     width: 1170px;
+  }
+
+  .header {
+    height: 920px;
   }
 
   .header-top-navigation > a {
@@ -356,6 +363,7 @@ body {
   background-repeat: no-repeat;
   margin: 50px 0;
   background-position: 50%;
+  background-size: cover;
 }
 
 .quote-block {
