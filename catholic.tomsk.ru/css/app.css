@@ -65,6 +65,10 @@ body {
     margin-top: -90px;
   }
 
+  .jumbotron-block-splitter::after {
+    top: 35px;
+  }
+
   .jumbotron-block-info {
     grid-gap: 8px;
     text-align: center;
@@ -98,6 +102,10 @@ body {
 
   .jumbotron-block {
     margin-top: -60px;
+  }
+
+  .jumbotron-block-splitter::after {
+    top: 3px;
   }
 
   .jumbotron-block-info {
@@ -168,7 +176,6 @@ body {
   content: " ";
   position: absolute;
   left: -35px;
-  top: 0;
   height: 80px;
   border-right: 2px dotted #e7e7e7;
 }
