@@ -71,8 +71,49 @@ body {
     width: auto;
   }
 
+  .quote {
+    background-position: 100% 0;
+    background-size: 250%;
+  }
+
+  .quote-block > div:first-child {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .quote-block > div:first-child::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    border-bottom: 2px dotted #675a55;
+    width: 100%;
+  }
+
+  .calendar-header {
+    text-align: center;
+  }
+
+  .calendar-combined {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .calendar-header-link {
+    display: inline-block;
+  }
+
   .calendar-block {
     margin: 0 30px;
+  }
+
+  .announce-block {
+    grid-template-columns: 150px auto;
+  }
+
+  .announce-head-date {
+    padding-top: 13px;
   }
 
   .info {
@@ -151,12 +192,30 @@ body {
     text-align: center;
   }
 
+  .announce-block {
+    grid-template-columns: 235px auto;
+  }
+
+  .quote {
+    background-position: 100% 20%;
+    background-size: 250%;
+  }
+
+  .quote-block {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px;
+  }
+
   .calendar-header {
     text-align: center;
   }
 
   .calendar-header-link {
     display: inline-block;
+  }
+
+  .calendar-combined {
+    grid-template-columns: 3fr 1fr;
   }
 
   .announce-head-date {
@@ -223,6 +282,14 @@ body {
     width: 1170px;
   }
 
+  .calendar-box-splitted {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .calendar-combined {
+    grid-template-columns: 3fr 2fr 3fr 1fr;
+  }
+
   .header {
     height: 920px;
   }
@@ -268,8 +335,22 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  .announce-block {
+    grid-template-columns: 235px auto;
+  }
+
   .announce-head-date {
     padding-top: 22px;
+  }
+
+  .quote {
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .quote-block {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px;
   }
 
   .calendar-block {
@@ -343,6 +424,7 @@ body {
   border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
+  display: inline-block;
 }
 
 .header-top-navigation > a:hover {
@@ -417,7 +499,6 @@ body {
 
 .announce-block {
   display: grid;
-  grid-template-columns: 235px auto;
   background-color: #FFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -543,17 +624,13 @@ body {
   background-image: url("../img/design/quote_bg.jpg");
   background-repeat: no-repeat;
   margin: 50px 0;
-  background-position: 50%;
-  background-size: cover;
 }
 
 .quote-block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
   color: #d0cdc6;
-  grid-gap: 120px;
   padding: 40px 60px;
   font-size: 17px;
 }
@@ -663,7 +740,6 @@ body {
 
 .calendar-box-splitted {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -686,7 +762,6 @@ body {
 
 .calendar-combined {
   display: grid;
-  grid-template-columns: 3fr 2fr 3fr 1fr;
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
