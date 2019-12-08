@@ -664,6 +664,7 @@ body {
   font-size: 27px;
   font-family: "intro-extra-bold", "Helvetica", "Arial", sans-serif;
   align-self: end;
+  padding-top: 15px;
 }
 
 .announce-head-date-month {
