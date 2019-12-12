@@ -64,6 +64,10 @@ body {
     line-height: 30px;
   }
 
+  .header-announce {
+    display: none;
+  }
+
   .content-block {
     padding: 40px 50px;
   }
@@ -214,6 +218,10 @@ body {
 
   .header-top-navigation > a {
     line-height: 40px;
+  }
+
+  .header-announce {
+    display: none;
   }
 
   .content-block {
@@ -413,6 +421,7 @@ body {
     font-size: 49px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.7);
   }
 
   .header-announce-text {
@@ -420,6 +429,7 @@ body {
     font-family: "intro-light", "Helvetica", "Arial", sans-serif;
     margin-top: 10px;
     font-size: 24px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   }
 
   .header-announce-schedule {
@@ -427,6 +437,7 @@ body {
     font-family: "intro-light", "Helvetica", "Arial", sans-serif;
     margin-top: 15px;
     font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   }
 
   .header-announce-schedule-item {
