@@ -421,8 +421,9 @@ body {
 
   .header-announce-title {
     color: #FFFFFF;
-    font-family: "intro-light", "Helvetica", "Arial", sans-serif;
-    font-size: 49px;
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.7);
@@ -432,7 +433,7 @@ body {
     color: #cabc93;
     font-family: "intro-light", "Helvetica", "Arial", sans-serif;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 22px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   }
 
